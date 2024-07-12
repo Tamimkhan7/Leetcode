@@ -18,10 +18,9 @@ int32_t main()
     while (cin >> x)
         a.push_back(x);
     vector<pair<int, int>> v;
-    for (int i = 0; i < a.size(); i++)
-    {
+    for (int i = 0; i < a.size(); i++)    
         v.push_back(make_pair(a[i], i));
-    }
+   
     sort(all(v));
     for (auto [x, y] : v)
         cout << x << ' ' << y << '\n';
