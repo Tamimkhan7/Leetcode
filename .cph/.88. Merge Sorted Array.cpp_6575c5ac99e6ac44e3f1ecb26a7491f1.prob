@@ -1,0 +1,1 @@
+{"name":"Local: 88","url":"/home/tamim/Desktop/Leetcode/88. Merge Sorted Array.cpp","tests":[{"id":1718340245869,"input":"3 3\n1 2 3 0 0 0\n2 5 6","output":""},{"id":1718422229680,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Leetcode/88. Merge Sorted Array.cpp","group":"local","local":true}
