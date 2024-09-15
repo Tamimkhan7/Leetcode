@@ -22,7 +22,7 @@ int32_t main()
         cin >> b[i];
     sort(a.begin(), a.end());
     sort(b.begin(), b.end());
-
+    // tamim
     // reverse(a.begin(), a.end());
     for (auto x : b)
         cout << x << ' ';
