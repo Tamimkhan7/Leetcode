@@ -1,0 +1,1 @@
+{"name":"Local: 2's Power","url":"/home/tamim/Desktop/Hackerrank problem/contest/2's Power.cpp","tests":[{"id":1703264342042,"input":"5\n1\n2\n3\n4\n524288","output":"1\n2\n2\n3\n20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Hackerrank problem/contest/2's Power.cpp","group":"local","local":true}
