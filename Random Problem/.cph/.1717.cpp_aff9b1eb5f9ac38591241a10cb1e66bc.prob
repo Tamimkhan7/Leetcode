@@ -1,0 +1,1 @@
+{"name":"Local: 1717","url":"/home/tamim/Desktop/Leetcode/Random Problem/1717.cpp","tests":[{"id":1733293029830,"input":"cdbcbbaaabab\n4 5","output":""},{"id":1733293190128,"input":"aabbaaxybbaabb\n5 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Leetcode/Random Problem/1717.cpp","group":"local","local":true}
