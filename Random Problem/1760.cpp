@@ -25,20 +25,15 @@ int32_t main()
     while (mx--)
     {
         int x = q.top();
+        show(x);
         q.pop();
-        bool ok = false;
-        for (int i = x / 2; i * i <= x; i++)
+        int sq = sqrt(x);
+        if (1LL * sq * sq == x)
         {
-            if (x % i == 0)
-            {
-                int y = x - i;
-                q.push(y);
-                q.push(i);
-                ok = true;
-                break;
-            }
+            q.push(sq);
+            q.push(x - sq);
         }
-        if (!ok)
+        else
         {
             if (x % 2 == 0)
             {
@@ -47,16 +42,16 @@ int32_t main()
             }
             else
             {
-                q.push(x / 2);
                 q.push(x / 2 + 1);
+                q.push(x / 2);
             }
         }
     }
-    while (!q.empty())
-    {
-        cout << q.top() << ' ';
-        q.pop();
-    }
+    // while (!q.empty())
+    // {
+    //     cout << q.top() << ' ';
+    //     q.pop();
+    // }
 
     return 0;
 }
