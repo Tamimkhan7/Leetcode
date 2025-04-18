@@ -45,7 +45,8 @@ int32_t main()
             // for (auto [x, y] : seen)
             //     cout << x << ' ' << y << "\n";
             // cout << '\n';
-            pre[s[r]]++;p
+            pre[s[r]]++;
+            p
         }
         else
         {
