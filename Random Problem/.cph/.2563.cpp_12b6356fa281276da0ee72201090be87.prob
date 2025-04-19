@@ -1,0 +1,1 @@
+{"name":"Local: 2563","url":"/home/tamim/Desktop/Leetcode/Random Problem/2563.cpp","tests":[{"id":1745039752871,"input":"6 3 6\n0 1 7 4 4 5","output":""},{"id":1745040505179,"input":"5 11 11 \n1 7 9 2 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tamim/Desktop/Leetcode/Random Problem/2563.cpp","group":"local","local":true}
