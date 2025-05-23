@@ -1,59 +1,28 @@
-#include <bits/stdc++.h>
-using namespace std;
-#define MTK                       \
-    ios_base::sync_with_stdio(0); \
-    cin.tie(0);                   \
-    cout.tie(0);
-#define mem(a, b) memset(a, b, sizeof(a))
-#define show(x) cout << #x << ' ' << x << endl
-#define all(x) (x).begin(), (x).end()
-#define ll int long long
-#define mod 1000000007
-
-bool cmp(pair<int, int> a, pair<int, int> b)
+class Solution
 {
-    return a.second < b.second;
-}
-
-int32_t main()
-{
-    MTK;
-    int n;
-    cin >> n;
-    vector<int> nums(n);
-    for (int i = 0; i < n; i++)
-        cin >> nums[i];
-    map<int, int> mp;
-    for (int i = 0; i < n; i++)
+public:
+    bool isZeroArray(vector<int> &nums, vector<vector<int>> &queries)
     {
-        int x = nums[i];
-        int sum = 0;
-        while (x > 0)
+        int n = nums.size();
+        vector<int> diff(n + 1, 0);
+
+        for (const auto &query : queries)
         {
-            sum += x % 10;
-            x /= 10;
+            int x = query[0];
+            int y = query[1];
+            diff[x] -= 1;
+            if (y + 1 < n)
+                diff[y + 1] += 1;
         }
-        mp[nums[i]] = sum;
+        int delta = 0;
+        for (int i = 0; i < n; i++)
+        {
+            delta += diff[i];
+            nums[i] += delta;
+            if (nums[i] > 0)
+                return false;
+        }
+
+        return true;
     }
-
-    vector<pair<int, int>> v;
-    for (auto [x, y] : mp)
-        v.push_back({x, y});
-
-    sort(v.begin(), v.end(), cmp);
-
-    for (auto [x, y] : v)
-    {
-        cout << x << ' ' << y << '\n';
-    }
-    int ans = 0;
-    for (int i = 0; i < n; i++)
-    {
-        if (nums[i] != v[i].first)
-            ans++;
-    }
-
-    show(ans);
-    show(ans / 2);
-    return 0;
-}
+};
